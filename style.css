@@ -1,3 +1,10 @@
+
+/*
+** Color
+*/
+
+$pagecolor: lightgrey;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -20,14 +27,14 @@
 	padding: 5px;
 	background-color: #fff;
 	color: lightgray;
-	border: 1px solid lightgray;
+	border: 1px solid $pagecolor;
 
 }
 button{
 	width: 100%;
 	padding: 2px;
 	background-color: #fff;
-	border: 1px solid lightgray;
+	border: 1px solid $pagecolor;
 	border-radius: 3px;
 }
 
@@ -41,7 +48,7 @@ li{
 	border-bottom: 2px dashed red;
 	list-style-type: none;
 	display: flex;
-	background-color: lightgray;
+	background-color: $pagecolor;
 	padding: 5px;
 }
 li:hover{
