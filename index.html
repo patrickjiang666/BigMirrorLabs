@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link data-require="bootstrap@3.3.2" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+ <script data-require="angular.js@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular.js"></script>
+ <script data-require="jquery@2.2.0" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ <link rel="stylesheet" href="style.css" />
+ <script src="script.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+	
+	<div class="wrapper">
+		<div class="header">			
+			<div class="result">{{secret}}</div>
+			<button ng-click="clear()">Clear</button>
+		</div>
+		
+		<ul>
+			<li ng-repeat="user in users" class="user" 
+				ng-click="click($index)">
+				<img ng-src="{{user.image}}" />
+				<div>
+					<p>{{user.name|uppercase}}</p>
+					<p>{{user.timestamp|date:"M/d/y"}}</p>
+				</div>
+			</li>
+
+		</ul>
+	</div>
+	
+</body>
+
+</html>
+
+<!--349lQ8pRxWCZXcMakniiQFrBUWZj9cqEjTYxo/PpSI0-->
